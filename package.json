@@ -1,0 +1,21 @@
+{
+  "name": "web-integration-lab",
+  "version": "1.0.0",
+  "description": "A hands-on repository for mastering frontend fundamentals. Focuses on Vanilla JS, DOM manipulation, and asynchronous API patterns to connect Python/AI backends with web UIs. Designed to evolve from raw JavaScript to modern frameworks like Next.js for scalable application development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MDalamin5/Web-Integration-Lab-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MDalamin5/Web-Integration-Lab-js/issues"
+  },
+  "homepage": "https://github.com/MDalamin5/Web-Integration-Lab-js#readme"
+}
