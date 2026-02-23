@@ -36,5 +36,23 @@
     }
 
     addLanguage("C#")
+
+    // EDIT data
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // approach 1
+    secondLang.innerHTML = "py"
+
+    //approach 2: best practice.
+    const newli = document.createElement('li')
+    newli.textContent = "golang"
+    secondLang.replaceWith(newli)
+
+    // edit different way
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li>Java</li>"
+
+    //remove
+    const langLang = document.querySelector("li:last-child")
+    langLang.remove()
 </script>
 </html>
