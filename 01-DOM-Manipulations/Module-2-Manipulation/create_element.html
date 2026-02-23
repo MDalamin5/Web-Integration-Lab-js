@@ -13,6 +13,7 @@
 </head>
 <body class="bg-black">
     <div class="parent">
+        <!--this is comment inside the HTML-->
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
         <div class="day">Wednesday</div>
@@ -22,11 +23,27 @@
 <script>
     const parent = document.querySelector(".parent")
     console.log(parent);
-    console.log(parent.children[2].innerHTML)
+    console.log(parent.children[2].innerHTML);
 
     console.log("===Displaying the children property of parent DIV===")
     for(let i=0; i<parent.children.length; i++){
-        console.log(parent.children[i].innerHTML)
+        console.log(parent.children[i].innerHTML);
     }
+
+    // extracting First element and last element of the div
+    parent.children[1].style.color = "green"
+    console.log(parent.firstElementChild);
+    console.log(parent.lastElementChild);
+
+    // go to child to parent.
+    const day_child = document.querySelector(".day");
+    console.log(day_child);
+
+    console.log(day_child.parentElement.outerHTML);
+    console.log(day_child.nextElementSibling.innerHTML);
+
+    console.log("Node: ", parent.childNodes)
+
+
 </script>
 </html>
