@@ -19,4 +19,14 @@
         <div class="day">Thursday</div>
     </div>
 </body>
+<script>
+    const parent = document.querySelector(".parent")
+    console.log(parent);
+    console.log(parent.children[2].innerHTML)
+
+    console.log("===Displaying the children property of parent DIV===")
+    for(let i=0; i<parent.children.length; i++){
+        console.log(parent.children[i].innerHTML)
+    }
+</script>
 </html>
