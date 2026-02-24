@@ -25,14 +25,50 @@
     //     alert("owl clicked")
     // }
 
+    // Explore more events: type, timestamp, defaultPrevented, target, toElement, srcElement, CurrentTarget
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
     // Best practice
-    document.getElementById('owl').addEventListener(
+    // document.getElementById('owl').addEventListener(
+    //     'click',
+    //     function(e){
+    //         alert("owl clicked.")
+    //         console.log(e)
+    //     },
+    //     false
+    // )
+
+    document.getElementById('images').addEventListener(
         'click',
-        function(){
-            alert("owl clicked.")
+        function(e){
+            // alert("owl clicked.")
+            console.log("Clicked inside the ul")
         },
         false
     )
+
+    document.getElementById('owl').addEventListener(
+        'click',
+        function(e){
+            // alert("owl clicked.")
+            console.log("Clicked on the owl.")
+            e.stopPropagation()
+        },
+        true
+    )
+
+    // i do not want like if user click on the url its do not redirect to google.
+    document.getElementById("google").addEventListener(
+        'click',
+        function(e){
+            console.log("google clicked")
+            e.stopPropagation()
+            e.preventDefault()
+        },
+        false
+    )
+
+    
 
     // Event object
 </script>
