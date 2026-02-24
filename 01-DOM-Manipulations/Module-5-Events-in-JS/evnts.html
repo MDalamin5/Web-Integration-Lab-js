@@ -38,38 +38,50 @@
     //     false
     // )
 
-    document.getElementById('images').addEventListener(
-        'click',
-        function(e){
-            // alert("owl clicked.")
-            console.log("Clicked inside the ul")
-        },
-        false
-    )
+    // document.getElementById('images').addEventListener(
+    //     'click',
+    //     function(e){
+    //         // alert("owl clicked.")
+    //         console.log("Clicked inside the ul")
+    //     },
+    //     false
+    // )
 
-    document.getElementById('owl').addEventListener(
-        'click',
-        function(e){
-            // alert("owl clicked.")
-            console.log("Clicked on the owl.")
-            e.stopPropagation()
-        },
-        true
-    )
+    // document.getElementById('owl').addEventListener(
+    //     'click',
+    //     function(e){
+    //         // alert("owl clicked.")
+    //         console.log("Clicked on the owl.")
+    //         e.stopPropagation()
+    //     },
+    //     true
+    // )
 
-    // i do not want like if user click on the url its do not redirect to google.
-    document.getElementById("google").addEventListener(
-        'click',
-        function(e){
-            console.log("google clicked")
-            e.stopPropagation()
-            e.preventDefault()
-        },
-        false
-    )
+    // // i do not want like if user click on the url its do not redirect to google.
+    // document.getElementById("google").addEventListener(
+    //     'click',
+    //     function(e){
+    //         console.log("google clicked")
+    //         e.stopPropagation()
+    //         e.preventDefault()
+    //     },
+    //     false
+    // )
 
     
 
-    // Event object
+    // goal is if we click the images then its will be despair.
+    document.querySelector("#images").addEventListener(
+        'click',
+        function(e){
+            // see where user click.
+            console.log(e.target.tagName)
+            if (e.target.tagName === "IMG"){
+                console.log(e.target.id)
+                const removeIt = e.target.parentNode
+                removeIt.remove()
+            }
+        }
+    )
 </script>
 </html>
