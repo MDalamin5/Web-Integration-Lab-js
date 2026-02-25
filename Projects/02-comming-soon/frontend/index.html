@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini AI Chat</title>
+    <style>
+        .bg-black{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <h1>Mini AI Chat</h1>
+    
+    <!-- UI Elements -->
+    <input type="text" id="user-input" placeholder="Type hello...">
+    <button id="send-btn">Ask AI</button>
+    
+    <!-- Result Area -->
+    <h3 id="response-area" style="color: blue;"></h3>
+    <br>
+    <br>
+
+    <button id="get-users">Get Users</button>
+
+    <!-- Load the Main Brain -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
