@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modular CRUD App</title>
+    <style>
+        body { font-family: sans-serif; padding: 2rem; max-width: 800px; margin: 0 auto; }
+        .form-group { background: #f4f4f4; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+        input { padding: 8px; margin-right: 10px; }
+        button { padding: 8px 15px; cursor: pointer; }
+        .btn-green { background: #28a745; color: white; border: none; }
+        .btn-red { background: #dc3545; color: white; border: none; }
+        .btn-yellow { background: #ffc107; border: none; }
+        ul { list-style: none; padding: 0; }
+        li { background: #eee; margin: 5px 0; padding: 10px; display: flex; justify-content: space-between; }
+        .loading { display: none; color: blue; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>AI Engineer Modular CRUD</h1>
+
+    <!-- FORM -->
+    <div class="form-group">
+        <input type="hidden" id="user-id">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <button id="save-btn" class="btn-green">Add User</button>
+        <span id="loading-msg" class="loading">Processing...</span>
+    </div>
+
+    <!-- LIST -->
+    <ul id="user-list"></ul>
+
+    <!-- MAIN SCRIPT (Must be type="module") -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>
